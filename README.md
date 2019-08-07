@@ -13,4 +13,4 @@ The game mainly displays a target color with a number of squares having several 
       1. In this project, arrays were used to keep track of the mode (easy and hard).
       2. Arrays were also used in this project to keep the colors of both 3 different colors in the easy mode and the 6       different colors in the hard mode. 
 
-   # How to optimize javascript functions to avoid sphaghetti code and also optimizing loops using forEach where it deems fit.
+   3. How to optimize javascript functions to avoid sphaghetti code and also optimizing loops using forEach where it deems fit.
