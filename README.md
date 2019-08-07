@@ -14,3 +14,7 @@ The game mainly displays a target color with a number of squares having several 
       2. Arrays were also used in this project to keep the colors of both 3 different colors in the easy mode and the 6 different colors in the hard mode. 
 
    3. How to optimize javascript functions to avoid sphaghetti code and also optimizing loops using forEach where it deems fit.
+   
+   # Images from the game app
+   
+   ![The index page](https://github.com/GillesJnr/rgbcolorgame/github_main.PNG)
