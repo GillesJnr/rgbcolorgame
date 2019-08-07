@@ -17,4 +17,7 @@ The game mainly displays a target color with a number of squares having several 
    
    # Images from the game app
    
-   ![The index page](https://github.com/GillesJnr/rgbcolorgame/github_main.PNG)
+   ![The index page](https://github.com/GillesJnr/rgbcolorgame/blob/master/game%20github%20main.PNG)
+   
+   ![When user wins](https://github.com/GillesJnr/rgbcolorgame/blob/master/game%20github.PNG)
+   ![Easy Mode of rgbcolor game](https://github.com/GillesJnr/rgbcolorgame/blob/master/easy%20mode.PNG)
