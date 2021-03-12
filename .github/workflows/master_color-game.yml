@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Python app to Azure Web App - color-game
+name: Build and deploy Node.js app to Azure Web App - color-game
 
 on:
   push:
@@ -16,20 +16,21 @@ jobs:
     steps:
     - uses: actions/checkout@master
 
-    - name: Set up Python version
-      uses: actions/setup-python@v1
+    - name: Set up Node.js version
+      uses: actions/setup-node@v1
       with:
-        python-version: '3.7'
+        node-version: '14.x'
 
-    - name: Build using AppService-Build
-      uses: azure/appservice-build@v2
-      with:
-        platform: python
-        platform-version: '3.7'
+    - name: npm install, build, and test
+      run: |
+        npm install
+        npm run build --if-present
+        npm run test --if-present
 
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'color-game'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_f675753820e94709a6c8ef45363c14f4 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_3562931cebd14ea9bc6ae8f4334206ea }}
+        package: .
